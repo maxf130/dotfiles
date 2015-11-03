@@ -1,0 +1,25 @@
+[color]
+	ui = true
+	branch = always
+	status = always
+	interactive = always
+	diff = always
+[user]
+	name = Maximilian Friedersdorff
+	email = maxf130@gmail.com
+[core]
+	editor = vim
+	excludesfile = /home/max/.gitignore
+[merge]
+	tool = diffuse
+[push]
+	default = simple
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset %ad %s %C(bold blue)<%an>%Creset %C(yellow)%d%Creset' --date=short
+	hist = log --graph --full-history --all --pretty=format:'%Cred%h%Creset %ad %s %C(bold blue)<%an>%Creset %C(yellow)%d%Creset' --date=short
+        struct = log --graph --full-history --all --pretty=format:'%ad %s %Creset %C(yellow)%d%Creset' --date=short --simplify-by-decoration
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	df = diff

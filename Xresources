@@ -1,0 +1,8 @@
+xterm*termName: xterm-256color
+XTerm*locale: true
+XTerm*metaSendsEscape: true
+*foreground: rgb:ff/ff/ff
+*background: rgb:00/00/00
+xterm*faceName: DejaVu Sans Mono for Powerline:size=12:antialias=true
+
+Xcursor.size: 30 
