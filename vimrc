@@ -52,7 +52,8 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 
 set laststatus=2
-let g:airline_powerline_fonts = 1
+" Set this to 1 if powerline fonts are installed.
+let g:airline_powerline_fonts = 0
 set timeoutlen=50
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
