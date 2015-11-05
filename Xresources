@@ -5,4 +5,8 @@ XTerm*metaSendsEscape: true
 *background: rgb:00/00/00
 xterm*faceName: DejaVu Sans Mono for Powerline:size=12:antialias=true
 
+rxvt*foreground: rgb:ff/ff/ff
+rxvt*background: rgb:00/00/00
+Rxvt*scrollBar: false
 Xcursor.size: 30 
+
