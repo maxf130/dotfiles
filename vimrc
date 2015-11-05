@@ -1,3 +1,6 @@
+:let mapleader = "-"
+:let maplocalleader = "\\"
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -15,13 +18,14 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'git@github.com:Raimondi/delimitMate.git'
 Plugin 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'marijnh/tern_for_vim'
+Plugin 'ternjs/tern_for_vim'
 Plugin 'git@github.com:docunext/closetag.vim.git'
 Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'LaTeX-Box-Team/LaTeX-Box'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -54,7 +58,7 @@ let g:syntastic_javascript_checkers = ['eslint']
 set laststatus=2
 " Set this to 1 if powerline fonts are installed.
 let g:airline_powerline_fonts = 0
-set timeoutlen=50
+set timeoutlen=1000
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 
@@ -67,3 +71,13 @@ let g:ctrlp_working_path_mode = 'r'
 
 " Editorconfig
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+
+" Delimit Mate
+let delimitMate_autoclose = 0
+
+" latex-box
+let g:LatexBox_quickfix = 4
+let g:LatexBox_viewer = "apvlv"
+
+" clang fix
+let g:clang_user_options='|| exit0'
