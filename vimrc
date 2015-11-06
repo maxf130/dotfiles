@@ -17,7 +17,6 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'Yggdroot/indentLine'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/syntastic'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'docunext/closetag.vim'
 Plugin 'bling/vim-airline'
@@ -26,6 +25,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
+Plugin 'ajh17/VimCompletesMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -71,9 +71,6 @@ let g:ctrlp_working_path_mode = 'r'
 
 " Editorconfig
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
-
-" Delimit Mate
-let delimitMate_autoclose = 0
 
 " latex-box
 let g:LatexBox_quickfix = 4
