@@ -77,7 +77,6 @@ let delimitMate_autoclose = 0
 
 " latex-box
 let g:LatexBox_quickfix = 4
-let g:LatexBox_viewer = "apvlv"
 
 " clang fix
 let g:clang_user_options='|| exit0'
