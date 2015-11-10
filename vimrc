@@ -55,6 +55,10 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 
+" Syntastic C++11
+let g:syntastic_cpp_compiler = 'g++'
+let g:syntastic_cpp_compiler_options = '-std=c++11'
+
 set laststatus=2
 " Set this to 1 if powerline fonts are installed.
 let g:airline_powerline_fonts = 0
