@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #
 # ~/.xinitrc
 #
@@ -14,7 +14,8 @@ fi
 
 
 # Load .Xresources
-[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+xrdb -merge ~/.Xresources &> /dev/null
+
 
 # Set caps lock as control to avoid emacs pinky
 setxkbmap -option ctrl:nocaps
