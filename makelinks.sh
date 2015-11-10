@@ -8,7 +8,7 @@
 
 dir=~/etc/dotfiles                    
 olddir=~/etc/dotfiles.bak             
-files="vimrc bashrc xsession Xresources gitconfig zprofile zshenv zshrc xinitrc"
+files="vimrc bashrc Xresources gitconfig zprofile zshenv zshrc xinitrc"
 
 ##########
 
