@@ -23,6 +23,7 @@ setxkbmap -option ctrl:nocaps
 export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on"
 
 
+feh --bg-scale ~/Pictures/background.jpg&
 
 
 # exec gnome-session
