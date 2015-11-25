@@ -81,3 +81,7 @@ let g:LatexBox_quickfix = 4
 
 " clang fix
 let g:clang_user_options='|| exit0'
+
+" Color 80th column
+highlight ColorColumn ctermbg=237
+set colorcolumn=80
