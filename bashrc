@@ -111,3 +111,13 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+
+# Some simple note taking functions
+n() {
+  $EDITOR ~/notes/"$*".txt
+}
+
+nls() {
+  ls -c ~/notes/ | grep "$*"
+}
