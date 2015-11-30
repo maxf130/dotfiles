@@ -115,9 +115,9 @@ fi
 
 # Some simple note taking functions
 n() {
-  $EDITOR ~/notes/"$*".txt
+  $EDITOR ~/notes/"$*".md
 }
 
 nls() {
-  ls -c ~/notes/ | grep "$*"
+  ls -cR ~/notes/ | grep "$*"
 }
