@@ -7,3 +7,11 @@ export PATH="$PATH:/home/max/bin:$NPM_PACKAGES/bin:$HOME/.rvm/bin"
 unset MANPATH
 MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+	. "$HOME/.bashrc"
+    fi
+fi
+
