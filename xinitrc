@@ -23,13 +23,6 @@ setxkbmap -option ctrl:nocaps
 # Set java font option
 export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on"
 
-
 feh --bg-scale ~/Pictures/background.jpg&
 
-
-# exec gnome-session
-# exec startkde
-# exec startxfce4
-# ...or the Window Manager of your choice
-#exec i3
-exec ck-launch-session dbus-launch --sh-syntax --exit-with-session qtile 
+exec /usr/bin/ratpoison
