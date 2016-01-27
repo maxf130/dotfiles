@@ -9,6 +9,7 @@
 dir=~/etc/dotfiles                    
 olddir=~/etc/dotfiles.bak             
 files="vimrc bashrc bash_profile Xresources gitconfig gitignore xinitrc"
+directories="mutt"
 
 ##########
 
@@ -22,6 +23,14 @@ cd $dir
 #then create symlinks from the homedir to any files in the 
 #~/dotfiles directory specified in $files
 for file in $files; do
-    mv ~/.$file $olddir/
-    ln -s $dir/$file ~/.$file
+  mv ~/.$file $olddir/
+  ln -s $dir/$file ~/.$file
 done
+
+# For every directory execute the install file.
+for directory in $directories; do
+  mkdir -p ~/.$directory
+  source ./$directory/makelinks.sh
+done
+
+

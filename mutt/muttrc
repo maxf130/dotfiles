@@ -1,0 +1,15 @@
+# Macro keys for different mailboxes
+macro index <f2> '<sync-mailbox><change-folder>imaps://mail.friedersdorff.com<enter>'
+macro index <f3> '<sync-mailbox><change-folder>imaps://outlook.office365.com<enter>'
+macro index <f4> '<sync-mailbox><change-folder>imaps://imap.gmail.com<enter>'
+
+# Configuration files for different mailboxes
+folder-hook 'friedersdorff.com' 'source ~/.mutt/account.com.friedersdorff.max'
+folder-hook 'office365.com' 'source ~/.mutt/account.uk.ac.le.student.mf195'
+folder-hook 'gmail.com' 'source ~/.mutt/account.com.gmail.maxf130'
+
+# Always check personal email first
+source ~/.mutt/account.com.friedersdorff.max
+
+auto_view text/html
+alternative_order text/plain text/enriched text/html
