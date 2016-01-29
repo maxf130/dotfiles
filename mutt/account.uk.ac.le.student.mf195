@@ -1,0 +1,12 @@
+set imap_user = "mf195@student.le.ac.uk"
+set imap_pass = $my_student_password
+set smtp_url = "smtp://mf195@smtp.office365.com:587"
+set smtp_pass = $my_student_password
+set from = "mf195@student.le.ac.uk"
+set realname = "Maximilian Friedersdorff"
+set folder = "imaps://outlook.office365.com:993"
+set spoolfile = "+INBOX"
+set postponed = "+Drafts"
+set header_cache = ~/.mutt/uk.ac.le.student.mf195/cache/headers
+set message_cachedir = ~/.mutt/uk.ac.le.student.mf195/cache/bodies
+set certificate_file = ~/.mutt/uk.ac.le.student.mf195/certificates

@@ -1,0 +1,12 @@
+set imap_user = "maxf130@gmail.com"
+set imap_pass = $my_personal_gmail_password
+set smtp_url = "smtp://maxf130@smtp.gmail.com:587"
+set smtp_pass = $my_personal_gmail_password
+set from = "maxf130@gmail.com"
+set realname = "Maximilian Friedersdorff"
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set postponed = "+[Gmail]/Drafts"
+set header_cache = ~/.mutt/com.gmail.maxf130.account/cache/headers
+set message_cachedir = ~/.mutt/com.gmail.maxf130.account/cache/bodies
+set certificate_file = ~/.mutt/com.gmail.maxf130.account/certificates
