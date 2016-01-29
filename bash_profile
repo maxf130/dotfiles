@@ -15,3 +15,6 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
+if [ -f /etc/bash_completion ]; then
+  . /etc/bash_completion
+fi
