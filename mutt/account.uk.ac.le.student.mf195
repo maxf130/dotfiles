@@ -10,3 +10,5 @@ set postponed = "+Drafts"
 set header_cache = ~/.mutt/uk.ac.le.student.mf195/cache/headers
 set message_cachedir = ~/.mutt/uk.ac.le.student.mf195/cache/bodies
 set certificate_file = ~/.mutt/uk.ac.le.student.mf195/certificates
+
+set trash="+Trash"

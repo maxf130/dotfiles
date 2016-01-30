@@ -10,3 +10,5 @@ set postponed = "+Drafts"
 set header_cache = ~/.mutt/com.friedersdorff.max/cache/headers
 set message_cachedir = ~/.mutt/com.friedersdorff.max/cache/bodies
 set certificate_file = ~/.mutt/com.friedersdorff.max/certificates
+
+set trash = "+Trash"
