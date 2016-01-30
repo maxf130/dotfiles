@@ -1,7 +1,7 @@
 dir=~/etc/dotfiles/mutt
 olddir=~/etc/dotfiles.bak/mutt
 target=~/.mutt
-files="account.com.friedersdorff.max account.com.gmail.maxf130 account.uk.ac.le.student.mf195 mailcap muttrc passwords.gpg"
+files="account.com.friedersdorff.max account.com.gmail.maxf130 account.uk.ac.le.student.mf195 mailcap muttrc solarized.muttrc passwords.gpg"
 directories="com.friedersdorff.max com.gmail.maxf130.account uk.ac.le.student.mf195"
 
 mkdir -p $olddir

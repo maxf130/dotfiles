@@ -11,7 +11,7 @@ call vundle#begin()
 " call vundle#begin('~/some/path/here')
 Plugin 'gmarik/Vundle.vim'
 Plugin 'jelera/vim-javascript-syntax' 
-Plugin 'zanloy/vim-colors-sunburst'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'Lokaltog/vim-distinguished'
 Plugin 'pangloss/vim-javascript'
 Plugin 'Yggdroot/indentLine'
@@ -35,7 +35,7 @@ filetype plugin indent on    " required
 set t_Co=256
 syntax on
 set background=dark
-colorscheme sunburst 
+colorscheme solarized
 set expandtab
 set shiftwidth=2
 set softtabstop=2

@@ -15,3 +15,5 @@ source ~/.mutt/account.com.friedersdorff.max
 
 auto_view text/html
 alternative_order text/plain text/enriched text/html
+
+source ~/.mutt/solarized.muttrc

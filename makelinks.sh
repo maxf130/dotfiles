@@ -8,7 +8,7 @@
 
 dir=~/etc/dotfiles                    
 olddir=~/etc/dotfiles.bak             
-files="vimrc bashrc bash_profile Xresources gitconfig gitignore xinitrc"
+files="vimrc bashrc bash_profile bash_aliases dir_colors Xresources gitconfig gitignore xinitrc"
 directories="mutt"
 
 ##########
