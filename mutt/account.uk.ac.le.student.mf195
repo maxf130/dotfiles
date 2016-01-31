@@ -1,6 +1,6 @@
 set imap_user = "mf195@student.le.ac.uk"
 set imap_pass = $my_student_password
-set smtp_url = "smtp://mf195@smtp.office365.com:587"
+set smtp_url = "smtp://mf195@student.le.ac.uk@smtp.office365.com:587"
 set smtp_pass = $my_student_password
 set from = "mf195@student.le.ac.uk"
 set realname = "Maximilian Friedersdorff"

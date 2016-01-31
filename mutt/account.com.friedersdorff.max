@@ -1,6 +1,6 @@
 set imap_user = "max@friedersdorff.com"
 set imap_pass = $my_personal_password
-set smtp_url = "smtp://max@mail.friedersorff.com:587"
+set smtp_url = "smtp://max@mail.friedersdorff.com:587"
 set smtp_pass = $my_personal_password
 set from = "max@friedersdorff.com"
 set realname = "Maximilian Friedersdorff"

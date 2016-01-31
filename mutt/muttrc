@@ -8,6 +8,8 @@ folder-hook 'friedersdorff.com' 'source ~/.mutt/account.com.friedersdorff.max'
 folder-hook 'office365.com' 'source ~/.mutt/account.uk.ac.le.student.mf195'
 folder-hook 'gmail.com' 'source ~/.mutt/account.com.gmail.maxf130'
 
+macro index 'c' '<change-folder>?<change-dir><home>^K+<enter>'
+
 # Source the passwords file
 source "gpg -dq ~/.mutt/passwords.gpg |"
 # Always check personal email first
