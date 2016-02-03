@@ -25,6 +25,6 @@ export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on"
 
 feh --bg-scale ~/Pictures/background.jpg&
 
-owncloud&
+xset -b
 
 exec /usr/bin/ratpoison
