@@ -27,6 +27,8 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'ajh17/VimCompletesMe'
 Plugin 'hynek/vim-python-pep8-indent'
+Plugin 'vim-scripts/octave.vim--'
+Plugin 'vim-scripts/MatlabFilesEdition'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -88,3 +90,8 @@ let g:clang_user_options='|| exit0'
 " Color 80th column
 highlight ColorColumn ctermbg=237
 set colorcolumn=80
+
+" Octave Syntax
+" augroup filetypedetect
+"   au! BufRead,BufNewFile *.m,*.oct set filetype=octave
+" augroup END 
