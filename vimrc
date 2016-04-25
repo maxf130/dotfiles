@@ -27,6 +27,9 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'ajh17/VimCompletesMe'
+Plugin 'hynek/vim-python-pep8-indent'
+Plugin 'vim-scripts/octave.vim--'
+Plugin 'vim-scripts/MatlabFilesEdition'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -53,8 +56,10 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 2
 let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ['eslint']
+"let g:syntastic_python_python_exec = '/usr/bin/python3'
+"let g:syntastic_python_checkers = ['flake8']
 
 " Syntastic C++11
 let g:syntastic_cpp_compiler = 'g++'
@@ -86,3 +91,8 @@ let g:clang_user_options='|| exit0'
 " Color 80th column
 highlight ColorColumn ctermbg=237
 set colorcolumn=80
+
+" Octave Syntax
+" augroup filetypedetect
+"   au! BufRead,BufNewFile *.m,*.oct set filetype=octave
+" augroup END 
