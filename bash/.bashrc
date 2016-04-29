@@ -54,16 +54,6 @@ if ! shopt -oq posix; then
 fi
 
 
-# Some simple note taking functions
-n() {
-  $EDITOR ~/notes/"$*".md
-}
-
-nls() {
-  ls -cR ~/notes/ | grep "$*"
-}
-
-
 Green=$(tput setaf 64)
 Red=$(tput setaf 160)
 Yellow=$(tput setaf 136)
