@@ -12,3 +12,4 @@ set message_cachedir = ~/.mutt/uk.ac.le.student.mf195/cache/bodies
 set certificate_file = ~/.mutt/uk.ac.le.student.mf195/certificates
 
 set trash="+Trash"
+set record="+Sent"

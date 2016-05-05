@@ -15,7 +15,23 @@ source "gpg -dq ~/.mutt/passwords.gpg |"
 # Always check personal email first
 source ~/.mutt/account.com.friedersdorff.max
 
+# Automatically render html emails.  Not sure if this is a good idea
 auto_view text/html
 alternative_order text/plain text/enriched text/html
 
+# Solarized color theme
 source ~/.mutt/solarized.muttrc
+
+# use abook for aliases
+set alias_file=~/.mutt/aliases
+set sort_alias= alias
+source $alias_file
+
+#set query_command="abook --mutt-query '%s'"
+#macro index a   "|abook --add-email\n" 'add sender to abook'
+#macro pager a   "|abook --add-email\n" 'add sender to abook'
+
+macro index \cb   "|urlview\n"
+macro pager \cb   "|urlview\n"
+
+
