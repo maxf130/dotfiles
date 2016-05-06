@@ -12,3 +12,4 @@ set message_cachedir = ~/.mutt/uk.co.musoft.max/cache/bodies
 set certificate_file = ~/.mutt/uk.co.musoft.max/certificates
 
 set trash = ""
+set record = ""

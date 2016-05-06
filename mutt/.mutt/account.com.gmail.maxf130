@@ -12,3 +12,4 @@ set message_cachedir = ~/.mutt/com.gmail.maxf130/cache/bodies
 set certificate_file = ~/.mutt/com.gmail.maxf130/certificates
 
 set trash = ""
+set record = ""
