@@ -1,12 +1,15 @@
 # Macro keys for different mailboxes
 macro index <f2> '<sync-mailbox><change-folder>imaps://mail.friedersdorff.com<enter>'
 macro index <f3> '<sync-mailbox><change-folder>imaps://outlook.office365.com<enter>'
-macro index <f4> '<sync-mailbox><change-folder>imaps://imap.gmail.com<enter>'
+macro index <f4> '<sync-mailbox><change-folder>imaps://maxf130@imap.gmail.com<enter>'
+macro index <f5> '<sync-mailbox><change-folder>imaps://max@musoft.co.uk@imap.gmail.com<enter>'
+
 
 # Configuration files for different mailboxes
 folder-hook 'friedersdorff.com' 'source ~/.mutt/account.com.friedersdorff.max'
 folder-hook 'office365.com' 'source ~/.mutt/account.uk.ac.le.student.mf195'
-folder-hook 'gmail.com' 'source ~/.mutt/account.com.gmail.maxf130'
+folder-hook 'maxf130@imap.gmail.com' 'source ~/.mutt/account.com.gmail.maxf130'
+folder-hook 'max@musoft.co.uk@imap.gmail.com' 'source ~/.mutt/account.uk.co.musoft.max'
 
 macro index 'c' '<change-folder>?<change-dir><home>^K+<enter>'
 
@@ -27,11 +30,5 @@ set alias_file=~/.mutt/aliases
 set sort_alias= alias
 source $alias_file
 
-#set query_command="abook --mutt-query '%s'"
-#macro index a   "|abook --add-email\n" 'add sender to abook'
-#macro pager a   "|abook --add-email\n" 'add sender to abook'
-
 macro index \cb   "|urlview\n"
 macro pager \cb   "|urlview\n"
-
-
