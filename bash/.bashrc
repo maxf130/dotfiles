@@ -53,17 +53,24 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
-Green=$(tput setaf 64)
-Red=$(tput setaf 160)
-Yellow=$(tput setaf 136)
-Purple=$(tput setaf 61)
-BGreen=$Green$(tput bold)
-BRed=$Red$(tput bold)
-BYellow=$Yellow$(tput bold)
-BPurple=$Purple$(tput bold)
-
-Color_Off=$(tput sgr0)
+BASE03=$(tput setaf 8)
+BASE02=$(tput setaf 0)
+BASE01=$(tput setaf 10)
+BASE00=$(tput setaf 11)
+BASE0=$(tput setaf 12)
+BASE1=$(tput setaf 14)
+BASE2=$(tput setaf 7)
+BASE3=$(tput setaf 15)
+YELLOW=$(tput setaf 3)
+ORANGE=$(tput setaf 9)
+RED=$(tput setaf 1)
+MAGENTA=$(tput setaf 5)
+VIOLET=$(tput setaf 13)
+BLUE=$(tput setaf 4)
+CYAN=$(tput setaf 6)
+GREEN=$(tput setaf 2)
+BOLD=$(tput bold)
+RESET=$(tput sgr0)
 
 # set up command prompt
 function __prompt_command()
@@ -72,30 +79,30 @@ function __prompt_command()
   EXIT="$?"
   PS1=""
 
-  if [ $EXIT -eq 0 ]; then PS1+="\[$Green\][\!]\[$Color_Off\] "; else PS1+="\[$Red\][\!]\[$Color_Off\] "; fi
+  if [ $EXIT -eq 0 ]; then PS1+="\[$GREEN\][\!]\[$RESET\] "; else PS1+="\[$RED\][\!]\[$RESET\] "; fi
 
   # if logged in via ssh shows the ip of the client
   if [ -n "$SSH_CLIENT" ]; then 
     IP=${SSH_CLIENT%% *}
-    PS1+="\[$Yellow\]("$IP")\[$Color_Off\]"; 
+    PS1+="\[$YELLOW\]("$IP")\[$RESET\]"; 
   fi
 
   # debian chroot stuff (take it or leave it)
   PS1+="${debian_chroot:+($debian_chroot)}"
 
   # basic information (user@host:path)
-  PS1+="\[$BRed\]\u\[$Color_Off\]@\[$BRed\]\h\[$Color_Off\]:\[$BPurple\]\w\[$Color_Off\] "
+  PS1+="\[$RED$BOLD\]\u\[$RESET\]@\[$RED$BOLD\]\h\[$RESET\]:\[$BLUE\]\w\[$RESET\] "
 
   # check if inside git repo
   local git_status="`git status -unormal 2>&1`"    
   if ! [[ "$git_status" =~ Not\ a\ git\ repo ]]; then
     # parse the porcelain output of git status
     if [[ "$git_status" =~ nothing\ to\ commit ]]; then
-      local Color_On=$Green
+      local Color_On=$GREEN
     elif [[ "$git_status" =~ nothing\ added\ to\ commit\ but\ untracked\ files\ present ]]; then
-      local Color_On=$Purple
+      local Color_On=$PURPLE
     else
-      local Color_On=$Red
+      local Color_On=$RED
     fi
 
     if [[ "$git_status" =~ On\ branch\ ([^[:space:]]+) ]]; then
@@ -106,7 +113,7 @@ function __prompt_command()
     fi
 
     # add the result to prompt
-    PS1+="\[$Color_On\][$branch]\[$Color_Off\] "
+    PS1+="\[$Color_On\][$branch]\[$RESET\] "
   fi
 
   # prompt $ or # for root

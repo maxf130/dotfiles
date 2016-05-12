@@ -36,7 +36,7 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 " Random look and feel stuff
-set t_Co=256
+set t_Co=16
 syntax on
 set background=dark
 colorscheme solarized

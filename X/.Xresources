@@ -77,10 +77,11 @@
 
 
 
-xterm*termName: xterm-256color
+xterm*termName: xterm-color 
 XTerm*locale: true
 XTerm*metaSendsEscape: true
-xterm*faceName: DejaVu Sans Mono for Powerline:size=12:antialias=true
+xterm*faceName: DejaVu Sans Monoe
+xterm*faceSize: 12
 
 Rxvt*scrollBar: false
 Xcursor.size: 30 
