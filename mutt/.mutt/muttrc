@@ -1,8 +1,8 @@
 # Macro keys for different mailboxes
-macro index <f2> '<sync-mailbox><change-folder>imaps://mail.friedersdorff.com<enter>'
-macro index <f3> '<sync-mailbox><change-folder>imaps://outlook.office365.com<enter>'
-macro index <f4> '<sync-mailbox><change-folder>imaps://maxf130@imap.gmail.com<enter>'
-macro index <f5> '<sync-mailbox><change-folder>imaps://max@musoft.co.uk@imap.gmail.com<enter>'
+macro index \e1 '<sync-mailbox><change-folder>imaps://mail.friedersdorff.com<enter>'
+macro index \e2 '<sync-mailbox><change-folder>imaps://outlook.office365.com<enter>'
+macro index \e3 '<sync-mailbox><change-folder>imaps://maxf130@imap.gmail.com<enter>'
+macro index \e4 '<sync-mailbox><change-folder>imaps://max@musoft.co.uk@imap.gmail.com<enter>'
 
 
 # Configuration files for different mailboxes
