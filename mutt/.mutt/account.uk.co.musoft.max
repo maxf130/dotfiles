@@ -13,3 +13,5 @@ set certificate_file = ~/.mutt/uk.co.musoft.max/certificates
 
 set trash = ""
 set record = ""
+
+set pgp_sign_as="0x2EA4B143"

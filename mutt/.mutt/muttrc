@@ -36,3 +36,6 @@ macro pager \cb   "|urlview\n"
 
 set text_flowed=yes
 set editor="vim +':set textwidth=0' +':set wrapmargin=0' +':set wrap'"
+
+# Encryption
+source ~/.mutt/gpg.rc

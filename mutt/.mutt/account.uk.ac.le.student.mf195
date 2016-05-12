@@ -13,3 +13,5 @@ set certificate_file = ~/.mutt/uk.ac.le.student.mf195/certificates
 
 set trash="+Trash"
 set record="+Sent"
+
+set pgp_sign_as="0x33FA1EFF"
