@@ -53,22 +53,14 @@ if ! shopt -oq posix; then
   fi
 fi
 
-BASE03=$(tput setaf 8)
-BASE02=$(tput setaf 0)
-BASE01=$(tput setaf 10)
-BASE00=$(tput setaf 11)
-BASE0=$(tput setaf 12)
-BASE1=$(tput setaf 14)
-BASE2=$(tput setaf 7)
-BASE3=$(tput setaf 15)
-YELLOW=$(tput setaf 3)
-ORANGE=$(tput setaf 9)
+BLACK=$(tput setaf 0)
 RED=$(tput setaf 1)
-MAGENTA=$(tput setaf 5)
-VIOLET=$(tput setaf 13)
-BLUE=$(tput setaf 4)
-CYAN=$(tput setaf 6)
 GREEN=$(tput setaf 2)
+YELLOW=$(tput setaf 3)
+BLUE=$(tput setaf 4)
+MAGENTA=$(tput setaf 5)
+CYAN=$(tput setaf 6)
+GRAY=$(tput setaf 7)
 BOLD=$(tput bold)
 RESET=$(tput sgr0)
 
