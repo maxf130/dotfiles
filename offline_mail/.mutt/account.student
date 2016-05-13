@@ -1,5 +1,6 @@
 set from = "mf195@student.le.ac.uk"
 set realname = "Maximilian Friedersdorff"
+set sendmail = "/usr/bin/msmtp --account=student"
 
 set spoolfile = "+student/Inbox"
 set postponed = "+student/Drafts"

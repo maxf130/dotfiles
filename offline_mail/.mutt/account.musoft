@@ -1,5 +1,6 @@
 set from = "max@musoft.co.uk"
 set realname = "Maximilian Friedersdorff"
+set sendmail = "/usr/bin/msmtp --account=musoft"
 
 set spoolfile = "+musoft/INBOX"
 set postponed = "+musoft/Drafts"

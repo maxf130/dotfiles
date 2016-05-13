@@ -1,5 +1,6 @@
 set from = "maxf130@gmail.com"
 set realname = "Maximilian Friedersdorff"
+set sendmail = "/usr/bin/msmtp --account=personal-gmail"
 
 set spoolfile = "+personal-gmail/INBOX"
 set postponed = "+personal-gmail/[Gmail]/Drafts"
