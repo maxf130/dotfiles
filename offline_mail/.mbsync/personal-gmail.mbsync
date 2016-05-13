@@ -1,0 +1,49 @@
+IMAPAccount gmail
+Host imap.gmail.com
+User maxf130@gmail.com
+PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.mail_pass/personal-gmail.gpg"
+UseIMAPS yes
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+IMAPStore gmail-remote
+Account gmail
+
+MaildirStore gmail-local
+Path ~/mail/personal-gmail/
+Inbox ~/mail/personal-gmail/Inbox
+
+Channel gmail-sent
+Master :gmail-remote:"[Gmail]/Sent Mail"
+Slave :gmail-local:Sent
+SyncState *
+Create Slave
+
+Channel gmail-all-mail
+Master :gmail-remote:"[Gmail]/All Mail"
+Slave :gmail-local:"All Mail"
+SyncState *
+Create Slave
+
+Channel gmail-all-drafts
+Master :gmail-remote:"[Gmail]/Drafts"
+Slave :gmail-local:"Drafts"
+SyncState *
+Create Slave
+
+Channel gmail-all-spam
+Master :gmail-remote:"[Gmail]/Spam"
+Slave :gmail-local:"Spam"
+SyncState *
+Create Slave
+
+Channel gmail-default
+Master :gmail-remote:
+Slave :gmail-local:
+Patterns "INBOX"
+SyncState *
+Create Slave
+
+Group gmail
+Channel gmail-default
+Channel gmail-sent
+Channel gmail-all-mail

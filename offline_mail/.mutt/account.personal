@@ -1,0 +1,13 @@
+set from = "max@friedersdorff.com"
+set realname = "Maximilian Friedersdorff"
+
+set spoolfile = "+personal/Inbox"
+set postponed = "+personal/Drafts"
+set trash = "+personal/Trash"
+set record = "+personal/Sent"
+
+set header_cache = ~/.mutt/personal/cache/headers
+set message_cachedir = ~/.mutt/personal/cache/bodies
+set certificate_file = ~/.mutt/personal/certificates
+
+set pgp_sign_as="0x153CBB66"

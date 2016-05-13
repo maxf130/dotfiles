@@ -1,0 +1,7 @@
+set crypt_autosign
+set crypt_autopgp
+set crypt_replyencrypt
+set crypt_replysign
+set crypt_replysignencrypted
+set crypt_timestamp
+set pgp_use_gpg_agent

@@ -1,0 +1,13 @@
+set from = "maxf130@gmail.com"
+set realname = "Maximilian Friedersdorff"
+
+set spoolfile = "+personal-gmail/INBOX"
+set postponed = "+personal-gmail/[Gmail]/Drafts"
+set trash = ""
+set record = ""
+
+set header_cache = ~/.mutt/personal-gmail/cache/headers
+set message_cachedir = ~/.mutt/personal-gmail/cache/bodies
+set certificate_file = ~/.mutt/personal-gmail/certificates
+
+set pgp_sign_as="0x153CBB66"

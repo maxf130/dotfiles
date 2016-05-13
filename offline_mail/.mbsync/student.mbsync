@@ -1,0 +1,20 @@
+IMAPAccount student
+Host outlook.office365.com 
+User mf195@student.le.ac.uk 
+PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.mail_pass/student.gpg"
+UseIMAPS yes
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+IMAPStore student-remote
+Account student 
+
+MaildirStore student-local
+Path ~/mail/student/
+Inbox ~/mail/student/Inbox
+
+Channel student 
+Master :student-remote:
+Slave :student-local:
+Patterns "INBOX" "Drafts" "Sent" "Trash" "Junk E-Mail"
+Create Both
+SyncState *
