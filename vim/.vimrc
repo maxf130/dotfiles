@@ -11,7 +11,7 @@ call vundle#begin()
 " call vundle#begin('~/some/path/here')
 Plugin 'gmarik/Vundle.vim'
 Plugin 'jelera/vim-javascript-syntax' 
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'noahfrederick/vim-noctu'
 Plugin 'Lokaltog/vim-distinguished'
 Plugin 'pangloss/vim-javascript'
 Plugin 'Yggdroot/indentLine'
@@ -38,8 +38,7 @@ filetype plugin indent on    " required
 " Random look and feel stuff
 set t_Co=16
 syntax on
-set background=dark
-colorscheme solarized
+colorscheme noctu
 set expandtab
 set shiftwidth=2
 set softtabstop=2
@@ -71,7 +70,6 @@ let g:airline_powerline_fonts = 0
 set timeoutlen=1000
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline_theme = 'solarized'
 
 " Setting wildignore
 set wildignore+=venv
