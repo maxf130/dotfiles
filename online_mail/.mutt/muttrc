@@ -22,9 +22,6 @@ source ~/.mutt/account.com.friedersdorff.max
 auto_view text/html
 alternative_order text/plain text/enriched text/html
 
-# Solarized color theme
-source ~/.mutt/solarized.muttrc
-
 # use abook for aliases
 set alias_file=~/.mutt/aliases
 set sort_alias= alias

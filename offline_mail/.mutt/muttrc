@@ -19,9 +19,6 @@ macro index 'c' '<change-folder>?<change-dir><home>^K+<enter>'
 auto_view text/html
 alternative_order text/plain text/enriched text/html
 
-# Solarized color theme
-source ~/.mutt/solarized.muttrc
-
 # aliases
 set alias_file=~/.mutt/aliases
 set sort_alias= alias
