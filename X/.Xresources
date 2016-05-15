@@ -1,32 +1,39 @@
-*background: #303030
-*foreground: #dcdccc
-*cursorColor: #aaaaaa
-*colorUL: #366060
-*underlineColor: #dfaf8f
+! special
+*.foreground:   #a39a90
+*.background:   #16130f
+*.cursorColor:  #a39a90
 
-*color0: #303030
-*color8: #000000
+! black
+*.color0:       #16130f
+*.color8:       #5a5047
 
-*color1: #c99090
-*color9: #d9a0a0
+! red
+*.color1:       #826d57
+*.color9:       #826d57
 
-*color2: #7d9d7d
-*color10: #b0f8b0
+! green
+*.color2:       #57826d
+*.color10:      #57826d
 
-*color3: #cdbd8d
-*color11: #edddad
+! yellow
+*.color3:       #6d8257
+*.color11:      #6d8257
 
-*color4: #699da0
-*color12: #89cdd0
+! blue
+*.color4:       #6d5782
+*.color12:      #6d5782
 
-*color5: #d989c0
-*color13: #d989c0
+! magenta
+*.color5:       #82576d
+*.color13:      #82576d
 
-*color6: #90dde0
-*color14: #90dde0
+! cyan
+*.color6:       #576d82
+*.color14:      #576d82
 
-*color7: #d9d9c9
-*color15: #eeeeee
+! white
+*.color7:       #a39a90
+*.color15:      #dbd6d1
 
 xterm*termName: xterm-color 
 XTerm*locale: true
