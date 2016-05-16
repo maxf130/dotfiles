@@ -38,7 +38,6 @@ filetype plugin indent on    " required
 " Random look and feel stuff
 set t_Co=16
 syntax on
-colorscheme noctu
 set expandtab
 set shiftwidth=2
 set softtabstop=2
