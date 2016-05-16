@@ -1,6 +1,8 @@
 #!/bin/sh
 
 PID="/var/run/user/1000/sync_maiboxes.pid"
+LOG="/home/max/.local/var/log/mutt_mbsync.log"
+touch $LOG
 
 clean_up()
 {
@@ -24,7 +26,7 @@ sync_maiboxes()
   done
 }
 
-sync_maiboxes&
+sync_maiboxes& >> $LOG 2>&1
 echo $! > $PID
 /usr/bin/mutt
 
