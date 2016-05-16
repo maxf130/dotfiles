@@ -36,3 +36,6 @@ source ~/.mutt/gpg.rc
 
 # Speed up folder switch
 set sleep_time = 0 
+
+# Mutt colors
+source ~/.mutt/colors.mutt
