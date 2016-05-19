@@ -6,7 +6,6 @@ filetype off                  " required
 filetype plugin indent on    " required
 
 " Random look and feel stuff
-set t_Co=256
 syntax on
 set background=dark
 set expandtab
@@ -15,5 +14,5 @@ set softtabstop=2
 set number
 
 " Color 80th column
-highlight ColorColumn ctermbg=237
+highlight ColorColumn ctermbg=1
 set colorcolumn=80
