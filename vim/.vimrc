@@ -36,7 +36,6 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 " Random look and feel stuff
-set t_Co=16
 syntax on
 set expandtab
 set shiftwidth=2
@@ -87,7 +86,7 @@ let g:LatexBox_quickfix = 4
 let g:clang_user_options='|| exit0'
 
 " Color 80th column
-highlight ColorColumn ctermbg=237
+highlight ColorColumn ctermbg=1
 set colorcolumn=80
 
 " Octave Syntax
