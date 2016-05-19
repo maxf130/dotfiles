@@ -1,4 +1,4 @@
-color index default red ~D
 color index green default ~Q
+color index default red ~D
 
 color status white brightblack
