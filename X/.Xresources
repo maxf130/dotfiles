@@ -1,39 +1,57 @@
-! special
-*.foreground:   #a39a90
-*.background:   #16130f
-*.cursorColor:  #a39a90
+! --- special colors ---
+
+*background: #060b11
+*foreground: #d9e6f2
+
+! --- standard colors ---
 
 ! black
-*.color0:       #16130f
-*.color8:       #5a5047
+*color0: #000000
+
+! bright_black
+*color8: #303030
 
 ! red
-*.color1:       #826d57
-*.color9:       #826d57
+*color1: #971b25
+
+! bright_red
+*color9: #e56d77
 
 ! green
-*.color2:       #57826d
-*.color10:      #57826d
+*color2: #25971b
+
+! bright_green
+*color10: #77e56d
 
 ! yellow
-*.color3:       #6d8257
-*.color11:      #6d8257
+*color3: #978c1b
+
+! bright_yellow
+*color11: #e5db6d
 
 ! blue
-*.color4:       #6d5782
-*.color12:      #6d5782
+*color4: #1b2597
+
+! bright_blue
+*color12: #6d77e5
 
 ! magenta
-*.color5:       #82576d
-*.color13:      #82576d
+*color5: #8c1b97
+
+! bright_magenta
+*color13: #db6de5
 
 ! cyan
-*.color6:       #576d82
-*.color14:      #576d82
+*color6: #1b978c
+
+! bright_cyan
+*color14: #6de5db
 
 ! white
-*.color7:       #a39a90
-*.color15:      #dbd6d1
+*color7: #cdcdcd
+
+! bright_white
+*color15: #ffffff
 
 xterm*termName: xterm-color 
 XTerm*locale: true

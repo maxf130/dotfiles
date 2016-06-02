@@ -41,6 +41,7 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 set number
+set t_Co=16
 
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:indentLine_color_term = 200
