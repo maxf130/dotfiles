@@ -12,7 +12,6 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'jelera/vim-javascript-syntax' 
 Plugin 'noahfrederick/vim-noctu'
-Plugin 'Lokaltog/vim-distinguished'
 Plugin 'pangloss/vim-javascript'
 Plugin 'Yggdroot/indentLine'
 Plugin 'Raimondi/delimitMate'
@@ -30,6 +29,7 @@ Plugin 'ajh17/VimCompletesMe'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'vim-scripts/octave.vim--'
 Plugin 'vim-scripts/MatlabFilesEdition'
+Plugin 'altercation/vim-colors-solarized'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -37,6 +37,8 @@ filetype plugin indent on    " required
 
 " Random look and feel stuff
 syntax on
+set background=dark
+colorscheme solarized
 set expandtab
 set shiftwidth=2
 set softtabstop=2
@@ -87,7 +89,7 @@ let g:LatexBox_quickfix = 4
 let g:clang_user_options='|| exit0'
 
 " Color 80th column
-highlight ColorColumn ctermbg=1
+highlight ColorColumn ctermbg=0
 set colorcolumn=80
 
 " Octave Syntax
