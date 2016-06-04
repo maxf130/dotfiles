@@ -35,6 +35,6 @@ sync_mailboxes_loop()
 
 sync_mailboxes_loop& >> $LOG 2>&1
 echo $! > $PID
-/usr/bin/mutt
+/usr/local/bin/mutt
 
 clean_up
