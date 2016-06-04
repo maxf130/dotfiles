@@ -39,3 +39,6 @@ set sleep_time = 0
 
 # Mutt colors
 source ~/.mutt/colors.mutt
+
+set sort = threads
+set sort_aux = last-date-received
