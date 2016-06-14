@@ -29,16 +29,19 @@ macro index \cb   "|urlview\n"
 macro pager \cb   "|urlview\n"
 
 set text_flowed=yes
+set reflow_text=yes
 set editor="vim +':set textwidth=72' +'set fo=aw'"
 
 # Encryption
 source ~/.mutt/gpg.rc
 
 # Speed up folder switch
-set sleep_time = 0 
+set sleep_time=0 
 
 # Mutt colors
 source ~/.mutt/colors.mutt
 
-set sort = threads
-set sort_aux = last-date-received
+set sort=threads
+set sort_aux=last-date-received
+
+set fast_reply=yes
