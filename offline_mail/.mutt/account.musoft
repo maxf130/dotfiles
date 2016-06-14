@@ -8,7 +8,6 @@ set trash = ""
 set record = ""
 
 set header_cache = ~/.mutt/musoft/cache/headers
-set message_cachedir = ~/.mutt/musoft/cache/bodies
 set certificate_file = ~/.mutt/musoft/certificates
 
 set pgp_sign_as="0x2EA4B143"
