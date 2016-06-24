@@ -29,7 +29,7 @@ sync_mailboxes_loop()
   do
     sync_mailboxes
 
-    sleep 250
+    sleep 60
   done
 }
 
