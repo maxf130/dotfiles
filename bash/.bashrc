@@ -92,7 +92,7 @@ function __prompt_command()
     if [[ "$git_status" =~ nothing\ to\ commit ]]; then
       local Color_On=$GREEN
     elif [[ "$git_status" =~ nothing\ added\ to\ commit\ but\ untracked\ files\ present ]]; then
-      local Color_On=$PURPLE
+      local Color_On=$CYAN
     else
       local Color_On=$RED
     fi
