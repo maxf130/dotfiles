@@ -112,3 +112,14 @@ function __prompt_command()
   PS1+="\$ "
 }
 PROMPT_COMMAND=__prompt_command
+
+
+if [ -f "${HOME}/.gpg-agent-info" ]; then
+  . "${HOME}/.gpg-agent-info"
+  export GPG_AGENT_INFO
+  export SSH_AUTH_SOCK
+fi
+
+
+# Set GPG TTY
+export GPG_TTY=$(tty)
