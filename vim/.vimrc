@@ -29,7 +29,7 @@ Plugin 'ajh17/VimCompletesMe'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'vim-scripts/octave.vim--'
 Plugin 'vim-scripts/MatlabFilesEdition'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'flazz/vim-colorschemes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -38,12 +38,11 @@ filetype plugin indent on    " required
 " Random look and feel stuff
 syntax on
 set background=dark
-colorscheme solarized
+colorscheme molokai
 set expandtab
 set shiftwidth=2
 set softtabstop=2
 set number
-set t_Co=16
 
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:indentLine_color_term = 200
@@ -84,6 +83,7 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 " latex-box
 let g:LatexBox_quickfix = 4
+let g:LatexBox_viewer = "mupdf"
 
 " clang fix
 let g:clang_user_options='|| exit0'

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PID="/var/run/user/1000/sync_mailboxes.pid"
+PID="/home/max/.local/var/run/sync_mailboxes.pid"
 LOG="/home/max/.local/var/log/mutt_mbsync.log"
 touch $LOG
 
@@ -35,6 +35,6 @@ sync_mailboxes_loop()
 
 sync_mailboxes_loop& >> $LOG 2>&1
 echo $! > $PID
-/usr/local/bin/mutt
+/usr/bin/mutt
 
 clean_up
