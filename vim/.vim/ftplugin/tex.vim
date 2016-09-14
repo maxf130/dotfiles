@@ -1,2 +1,2 @@
-setlocal formatoptions=aw
+setlocal formatoptions=wt
 setlocal textwidth=80
