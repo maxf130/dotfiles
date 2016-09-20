@@ -16,9 +16,8 @@ fi
 # Load .Xresources
 xrdb -merge ~/.Xresources &> /dev/null
 
+setxkbmap gb
 
-# Set caps lock as control to avoid emacs pinky
-setxkbmap -option ctrl:nocaps
 
 # Set java font option
 export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on"
