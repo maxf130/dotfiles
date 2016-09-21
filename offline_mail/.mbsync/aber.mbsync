@@ -1,0 +1,20 @@
+IMAPAccount aber
+Host outlook.office365.com 
+User maf54@aber.ac.uk 
+PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.mail_pass/aber.gpg"
+UseIMAPS yes
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+IMAPStore aber-remote
+Account aber
+
+MaildirStore aber-local
+Path ~/mail/aber/
+Inbox ~/mail/aber/Inbox
+
+Channel aber 
+Master :aber-remote:
+Slave :aber-local:
+Patterns "INBOX" "Drafts" "Sent" "Trash" "Junk E-Mail"
+Create Both
+SyncState *

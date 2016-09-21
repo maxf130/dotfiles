@@ -1,0 +1,11 @@
+set from = "maf54@aber.ac.uk"
+set realname = "Maximilian Friedersdorff"
+set sendmail = "/usr/bin/msmtp --account=aber"
+
+set spoolfile = "+aber/Inbox"
+set postponed = "+aber/Drafts"
+set trash = "+aber/Trash"
+set record = "+aber/Sent"
+
+set header_cache = ~/.mutt/aber/cache/headers
+set certificate_file = ~/.mutt/aber/certificates

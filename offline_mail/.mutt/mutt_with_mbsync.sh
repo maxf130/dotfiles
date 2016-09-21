@@ -19,8 +19,7 @@ sync_mailboxes()
 {
   /usr/bin/mbsync -c /home/max/.mbsync/personal.mbsync -a >> $LOG 2>&1
   /usr/bin/mbsync -c /home/max/.mbsync/personal-gmail.mbsync -a >> $LOG 2>&1
-  /usr/bin/mbsync -c /home/max/.mbsync/student.mbsync -a >> $LOG 2>&1
-  /usr/bin/mbsync -c /home/max/.mbsync/musoft.mbsync -a >> $LOG 2>&1
+  /usr/bin/mbsync -c /home/max/.mbsync/aber.mbsync -a >> $LOG 2>&1
 }
 
 sync_mailboxes_loop()

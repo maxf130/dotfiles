@@ -2,13 +2,11 @@ set folder = ~/mail
 
 folder-hook personal/* source ~/.mutt/account.personal
 folder-hook personal-gmail/* source ~/.mutt/account.personal-gmail
-folder-hook student/* source ~/.mutt/account.student
-folder-hook musoft/* source ~/.mutt/account.musoft
+folder-hook aber/* source ~/.mutt/account.aber
 
 macro index \e1 '<change-folder>~/mail/personal/Inbox<enter>'
 macro index \e2 '<change-folder>~/mail/personal-gmail/Inbox<enter>'
-macro index \e3 '<change-folder>~/mail/student/Inbox<enter>'
-macro index \e4 '<change-folder>~/mail/musoft/Inbox<enter>'
+macro index \e3 '<change-folder>~/mail/aber/Inbox<enter>'
 
 source ~/.mutt/account.personal
 
