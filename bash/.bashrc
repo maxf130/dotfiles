@@ -71,6 +71,8 @@ function __prompt_command()
   EXIT="$?"
   PS1=""
 
+  PS1+=$PS1_PREPEND
+
   if [ $EXIT -eq 0 ]; then PS1+="\[$GREEN\][\!]\[$RESET\] "; else PS1+="\[$RED\][\!]\[$RESET\] "; fi
 
   # if logged in via ssh shows the ip of the client
@@ -108,6 +110,7 @@ function __prompt_command()
     PS1+="\[$Color_On\][$branch]\[$RESET\] "
   fi
 
+  PS1+=$PS1_APPEND
   # prompt $ or # for root
   PS1+="\$ "
 }
