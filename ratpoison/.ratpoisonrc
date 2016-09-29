@@ -9,3 +9,5 @@ bind t time
 
 bind l ratclick 1
 bind v ratclick 2
+
+bind S exec ~/.local/bin/suspend
