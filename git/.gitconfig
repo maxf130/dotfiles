@@ -12,6 +12,7 @@
 	excludesfile = /home/max/.gitignore
 [merge]
 	tool = diffuse
+        ff = false
 [push]
 	default = simple
 [alias]
