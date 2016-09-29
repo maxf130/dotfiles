@@ -30,6 +30,7 @@ Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'vim-scripts/octave.vim--'
 Plugin 'vim-scripts/MatlabFilesEdition'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'benmills/vimux'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -54,11 +55,12 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 2
-let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_python_python_exec = '/usr/bin/python3'
 let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_aggregate_errors = 1
 
 " Syntastic C++11
 let g:syntastic_cpp_compiler = 'g++'
@@ -96,3 +98,6 @@ set colorcolumn=80
 " augroup filetypedetect
 "   au! BufRead,BufNewFile *.m,*.oct set filetype=octave
 " augroup END 
+
+" vimux
+map C :VimuxPromptCommand<CR>
