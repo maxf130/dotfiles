@@ -15,6 +15,6 @@ Inbox ~/mail/personal/Inbox
 Channel personal
 Master :personal-remote:
 Slave :personal-local:
-Patterns "INBOX" "Drafts" "Sent" "Spam" "Trash" "Sec-Announce" "Support-blfs" "Dev-blfs"
+Patterns "INBOX" "Drafts" "Sent" "Spam" "Trash" "slackware"
 Create Both
 SyncState *
