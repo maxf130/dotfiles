@@ -64,28 +64,18 @@ GRAY=$(tput setaf 7)
 BOLD=$(tput bold)
 RESET=$(tput sgr0)
 
+function __virtualenv_prompt() {
+  if [ -n "$VIRTUAL_ENV" ]; then
+    echo "(${VIRTUAL_ENV##*/}) "
+  fi
+}
+
 # set up command prompt
 function __prompt_command()
 {
   # capture the exit status of the last command
   EXIT="$?"
   PS1=""
-
-  PS1+=$PS1_PREPEND
-
-  if [ $EXIT -eq 0 ]; then PS1+="\[$GREEN\][\!]\[$RESET\] "; else PS1+="\[$RED\][\!]\[$RESET\] "; fi
-
-  # if logged in via ssh shows the ip of the client
-  if [ -n "$SSH_CLIENT" ]; then 
-    IP=${SSH_CLIENT%% *}
-    PS1+="\[$YELLOW\]("$IP")\[$RESET\]"; 
-  fi
-
-  # debian chroot stuff (take it or leave it)
-  PS1+="${debian_chroot:+($debian_chroot)}"
-
-  # basic information (user@host:path)
-  PS1+="\[$RED$BOLD\]\u\[$RESET\]@\[$RED$BOLD\]\h\[$RESET\]:\[$BLUE\]\w\[$RESET\] "
 
   # check if inside git repo
   local git_status="`git status -unormal 2>&1`"    
@@ -107,10 +97,27 @@ function __prompt_command()
     fi
 
     # add the result to prompt
-    PS1+="\[$Color_On\][$branch]\[$RESET\] "
+    PS1+="\n\[$Color_On\][$branch]\[$RESET\]\n"
   fi
 
-  PS1+=$PS1_APPEND
+
+  PS1+="$(__virtualenv_prompt)"
+
+  if [ $EXIT -eq 0 ]; then PS1+="\[$GREEN\][\!]\[$RESET\] "; else PS1+="\[$RED\][\!]\[$RESET\] "; fi
+
+  # if logged in via ssh shows the ip of the client
+  if [ -n "$SSH_CLIENT" ]; then 
+    IP=${SSH_CLIENT%% *}
+    PS1+="\[$YELLOW\]("$IP")\[$RESET\]"; 
+  fi
+
+  # debian chroot stuff (take it or leave it)
+  PS1+="${debian_chroot:+($debian_chroot)}"
+
+  # basic information (user@host:path)
+  PS1+="\[$RED$BOLD\]\u\[$RESET\]@\[$RED$BOLD\]\h\[$RESET\]:\[$BLUE\]\w\[$RESET\] "
+
+  
   # prompt $ or # for root
   PS1+="\$ "
 }
