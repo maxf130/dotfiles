@@ -1,5 +1,5 @@
 export EDITOR="/usr/bin/vim"
-export PAGER="/usr/bin/less"
+export PAGER="/usr/bin/less -R"
 export PATH="/home/max/.local/bin:${PATH}"
 
 if [ -n "$BASH_VERSION" ]; then
